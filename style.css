@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- General ----- */
+
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --background-color-main: #94c0b1; 
+    --background-color-secondary: #e7f3ef; 
+    --width-main: 70%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+p {
+    font-size: 1.5em;
+}
+
+header{
+    height: 50px;
+    background-color: var(--background-color-main);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+header > img {
+    max-height: 100%;
+    filter: invert(50%);
+}
+
+#menu-links {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;  
+}
+
+#menu-links a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#section-about {
+    height: 600px;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10%;
+}
+
+#section-about p,
+#section-about h1 {
+    width: var(--width-main);
+}
+
+/*  ------ Gallery ------ */
+
+#section-gallery {
+    background-color: var(--background-color-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    row-gap: 40px;
+}
+
+.gallery-card {
+    height: 200px;
+    background-color: var(--background-color-secondary);
+    border: solid 2px var(--background-color-secondary);
+    width: var(--width-main);
+    border-radius: 5%;
+}
+
+.gallery-card > img {
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+
+.gallery-card > h2 {
+    text-align: center;
+    color: var(--background-color-main);
+    margin: 0 5%;
+}
+
+
+/* ------ Contact ------ */
+
+#section-contact {
+    background-color: var(--background-color-secondary);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+#section-contact form {
+    width: var(--width-main);
+    display: flex;
+    margin: 0 15%;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#section-contact input {
+    height: 50px;
+    font-size: 1.5em;
+    border: none;
+}
+#section-contact textarea {
+    height: 250px;
+    width: 100%;
+    font-size: 1.5em;
+    resize: none;
+    border: none;
+    ;
+ } 
+ /* vartotojas gales kisti tik auksti textarea */
+
+
+ #section-contact form button {
+   width: 25%;
+   height: 50px;
+   font-size: 1.5rem;
+   border: none;
+   background-color: var(--background-color-main);
+ }
+
